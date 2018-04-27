@@ -1,0 +1,95 @@
+.block-popular {
+  &__caption {
+    position: relative;
+
+    padding-bottom: 46px;
+
+    font-weight: 600;
+    font-size: 24px;
+    color: #393185;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -210px;
+      z-index: 1;
+
+      width: 84px;
+      height: 3px;
+
+      background-color: #e50a62;
+    }
+  }
+}
+
+.elem-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.elem {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-bottom: 35px;
+
+  &:nth-child(3n) {
+    padding: 0;
+  }
+
+  &__text {
+    padding-bottom: 23px;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #393185;
+    text-decoration: underline;
+
+    // &--last {
+    //   padding: 0;
+    // }
+  }
+
+  // &--last {
+  //   padding: 0;
+  //   border: 1px solid;
+  // }
+}
+
+.last-block {
+  position: relative;
+
+  max-width: 295px;
+  margin-top: 43px;
+  padding-top: 46px;
+  padding-right: 87px;
+  padding-bottom: 97px;
+  padding-left: 43px;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: #e50a62;
+  text-decoration: underline;
+
+  border: 8px solid #e50a62;
+
+  &::after {
+    content: url(../img/icons/icon-arrow-right.png);
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+  }
+
+  &:hover {
+    color: #e50a62;
+
+    border-color: #e50a62;
+    box-shadow: 1px 1px 80px rgba( #e50a62, 0.5);
+    transform: scale(1);
+  }
+}

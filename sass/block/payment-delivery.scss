@@ -1,0 +1,75 @@
+.payment-delivery {
+
+  margin-bottom: 81px;
+
+
+  &__caption {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 39px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -210px;
+      z-index: 1;
+
+      width: 84px;
+      height: 3px;
+
+      background-color: #e50a62;
+    }
+  }
+
+  &__caption-text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #393185;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    padding-bottom: 79px;
+    flex-basis: 28%;
+
+    &:nth-child(3n) {
+      flex-basis: 31%;
+      padding-right: 0;
+    }
+  }
+
+  &__elem-img {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 60px;
+      z-index: -2;
+      transform: translate(-50%, -50%);
+      background-color: #ecf5fd;
+      border-radius: 50%;
+    }
+  }
+
+  &__elem-text {
+
+    padding-left: 61px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #393185;
+  }
+}

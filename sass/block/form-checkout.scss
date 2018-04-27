@@ -1,0 +1,157 @@
+.form-checkout {
+  margin-bottom: 137px;
+}
+
+.form {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 925px;
+  padding: 0 97px;
+
+  border: 8px solid #393185;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    z-index: -2;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #ecf5fd;
+  }
+
+  &__caption {
+    position: absolute;
+    top: -43px;
+    left: 221px;
+
+    padding: 27px 97px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 21px;
+    color: #2e2771;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+
+    background-color: #ffffff;
+  }
+
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+  }
+
+  &__field-data {
+    flex-basis: 50%;
+    max-width: 350px;
+    padding-bottom: 29px;
+
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Futura Futuris";
+    color: #393185;
+
+    background-color: #ecf5fd;
+    border: none;
+    border-bottom: 3px solid rgba(#393185, 0.5);
+    outline: none;
+
+    &::placeholder {
+      color: rgba( #393185, 0.6);
+    }
+
+    &:focus {
+      border-color: #393185;
+    }
+  }
+
+  &__field-comment {
+    display: block;
+    width: 100%;
+    margin-top: 52px;
+
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Futura Futuris";
+    color: #393185;
+
+    background-color: #ecf5fd;
+    border: none;
+    border-bottom: 3px solid rgba(#393185, 0.5);
+    outline: none;
+
+    resize: none;
+
+    &::placeholder {
+      color: rgba( #393185, 0.6);
+    }
+
+    &:focus {
+      border-color: #393185;
+    }
+  }
+
+
+  &__upload-file {
+    margin-top: 37px;
+    margin-bottom: 25px;
+
+    line-height: 1;
+
+    .upload {
+      margin-right: 21px;
+    }
+
+    .upload input[type=file] {
+      display: none;
+    }
+
+    .custom-upload-file {
+      padding: 0 6px;
+
+      font-weight: 400;
+      font-size: 16px;
+      color: #393185;
+      white-space: nowrap;
+
+      border: 1px solid #393185;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  &__upload-file-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #393185;
+  }
+
+  &__btn-wrapper {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__btn-submit {
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    background-color: #e50a62;
+    border: none;
+    padding: 20px 105px;
+    max-width: 293px;
+
+    &:hover {
+      background-color: #ff0e6e;
+    }
+  }
+}

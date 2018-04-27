@@ -1,0 +1,44 @@
+.cost {
+  margin-bottom: 79px;
+
+  &__caption {
+    font-weight: 600;
+    font-size: 24px;
+    color: #393185;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -210px;
+      z-index: 1;
+
+      width: 84px;
+      height: 3px;
+
+      background-color: #e50a62;
+    }
+  }
+
+  &__footer {
+    padding: 25px 0;
+    padding-left: 25px;
+    border-bottom: 1px solid #e1eaf1;
+  }
+
+  &__footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #303030;
+
+    &--bold {
+      font-weight: 600;
+      color: #393185;
+    }
+  }
+}

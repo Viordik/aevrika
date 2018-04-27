@@ -1,0 +1,32 @@
+.header-footer {
+  &__wrapper {
+    margin: 0 -100px;
+    padding: 0 100px;
+    background-color: #393185;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 28px 0;
+  }
+
+  &__list-link {
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 21px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+
+    &::after {
+      content: url(../img/icons/icon-arrow-down.png);
+      position: absolute;
+      top: 0;
+      right: -20px;
+    }
+  }
+}
